@@ -19,9 +19,9 @@ var fs = require('fs');
 var path = require('path');
 const bcrypt = require('bcryptjs')
 
-mongoose.connect("mongodb+srv://devansh:devdev30@cluster0.4g6il.mongodb.net/sharedroof?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://devansh01:devdev30@cluster0.rrnxk.mongodb.net/shared-roof?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex:true, useFindAndModify:false })
     .then(() => console.log("Connection Successfull...."))
-    .catch((err) => console.log(err));
+    .catch((err) => console.log("db connection unsuccessfull..."));
 
 // Step 4 - set up EJS
 
