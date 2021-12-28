@@ -19,7 +19,7 @@ var fs = require('fs');
 var path = require('path');
 const bcrypt = require('bcryptjs')
 
-mongoose.connect("mongodb+srv://devansh01:devdev30@cluster0.rrnxk.mongodb.net/shared-roof?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex:true, useFindAndModify:false })
+mongoose.connect("mongodb+srv://devansh01:devdev30@cluster0.rrnxk.mongodb.net/shared-roof?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex:true })
     .then(() => console.log("Connection Successfull...."))
     .catch((err) => console.log("db connection unsuccessfull..."));
 
